@@ -1,0 +1,141 @@
+/* app css stylesheet */
+
+body {
+    color: #333;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+button {
+    border: 0 none #0010ae;
+    background-color: #1f2afe;
+    color: #fff;
+    font-size: 120%;
+    padding: 8px 16px;
+    outline-width: 0;
+    -webkit-appearance: none;
+}
+    button:hover {
+        background-color: #3d46fb;
+    }
+    button:active {
+        -moz-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+        -o-transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+    }
+
+.screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.contact {
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: #fff;
+
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar {
+    position: absolute;
+    width: 40px;
+    top: 16px;
+    left: 16px;
+}
+
+.name {
+    height: 65px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0 40px;
+}
+.list { 
+    clear: both;
+    padding-top: 8px;
+    padding-left: 32px;
+}
+.list ul { 
+    margin: 0;
+    padding: 0;
+}
+    .list li {
+        list-style: none;
+    }
+
+.screen1 {
+    overflow-y: scroll;
+    padding: 0;
+}
+.screen1 .contact {
+    cursor: pointer;
+    margin: 16px;
+    height: auto;
+    width: auto;
+}
+
+.screen2-button {
+    display: block;
+    margin: 24px auto;
+}
+
+.screen3-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: block;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.screen3-name {
+    height: 65px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 130px 25px 0;
+}
+.screen3-avatar {
+    position: relative;
+    width: 100px;
+    display: block;
+    margin: 24px auto;
+}
+
+.screen4-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: block;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    background-color: #fe1f2a;
+    border: 25px solid #ae0010;
+}
+    .screen4-button:hover {
+        background-color: #fb3d46;
+    }
+.screen4-avatar {
+    position: absolute;
+    top: 16px;
+    left: auto;
+    right: 16px;
+    width: 50px;
+    display: block;
+}
+.screen4 .list {
+    margin-top: 150px;
+}

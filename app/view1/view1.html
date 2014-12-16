@@ -1,0 +1,13 @@
+<div class="screen screen1">
+    <div ng-repeat="contact in contacts" class="contact" ng-click="clicked(contact)">
+        <img ng-class="clickedIndex === contact.id ? 'avatar hero' : 'avatar'" hero-id="img" ng-src="img/{{contact.img}}" />
+        <div ng-class="clickedIndex === contact.id ? 'name hero' : 'name'" hero-id="name">{{contact.name}}</div>
+        <div class="list">
+            <ul>
+                <li>Phone: {{contact.phone}}</li>
+                <li>Mobile: {{contact.mobile}}</li>
+                <li>Email: {{contact.email}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

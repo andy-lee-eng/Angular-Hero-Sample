@@ -1,4 +1,4 @@
-Angular-Hero
-============
+# Hero animations with Angular
 
-Hero animations with Angular
+The accompanying blog post is here: {blog post}
+

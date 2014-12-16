@@ -1,0 +1,14 @@
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+Angular-Hero.njsproj
+Angular-Hero.sln
+Angular-Hero.v12.suo
+bin/
+obj/
+.jshintrc
+.ntvs_analysis.dat.tmp

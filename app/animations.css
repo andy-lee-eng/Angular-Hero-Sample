@@ -1,0 +1,54 @@
+﻿
+.slide-transition.ng-enter, .slide-transition.ng-leave {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all ease-in-out 1000ms;
+    -moz-transition: all ease-in-out 1000ms;
+    -o-transition: all ease-in-out 1000ms;
+    transition: all ease-in-out 1000ms;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.slide-transition.ng-enter {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+    .slide-transition.ng-enter.ng-enter-active {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+.slide-transition.ng-leave.ng-leave-active {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hero-transition.hero-leave {
+    visibility: hidden;
+}
+
+.hero-transition.ng-leave {
+    visibility: visible;
+}
+
+.hero-animating {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all ease-in-out 1000ms;
+    -moz-transition: all ease-in-out 1000ms;
+    -o-transition: all ease-in-out 1000ms;
+    transition: all ease-in-out 1000ms;
+    position: absolute;
+    z-index: 10000;
+}
