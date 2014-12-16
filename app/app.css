@@ -19,7 +19,7 @@ button {
     button:hover {
         background-color: #3d46fb;
     }
-    button:active {
+    button:hover:active {
         -moz-transform: scale(0.9, 0.9);
         -ms-transform: scale(0.9, 0.9);
         -o-transform: scale(0.9, 0.9);
@@ -81,13 +81,28 @@ button {
     overflow-y: scroll;
     padding: 0;
 }
-.screen1 .contact {
-    cursor: pointer;
-    margin: 16px;
-    height: auto;
-    width: auto;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
+    .screen1 .contact {
+        cursor: pointer;
+        margin: 16px;
+        height: auto;
+        width: auto;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+        .screen1 .contact>img, .screen1 .contact>div {
+            pointer-events: none;
+        }
+    .screen1 .contact:hover:active {
+        -moz-transform: scale(0.95, 0.95);
+        -ms-transform: scale(0.95, 0.95);
+        -o-transform: scale(0.95, 0.95);
+        -webkit-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
 
 .screen2-button {
     display: block;
