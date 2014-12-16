@@ -29,7 +29,7 @@ angular.module('angularHero.hero-transition', ['ngAnimate'])
                 if (_startTimer) clearTimeout(_startTimer);
 
                 // Both screens, so start now
-                setTimeout(start)
+                setTimeout(start);
                 
                 // Return cancel function, which should only call clear once                
                 var cancelled = false;
@@ -107,9 +107,8 @@ angular.module('angularHero.hero-transition', ['ngAnimate'])
                             + (toRect.top - fromRect.top) + 'px, 0)',
                     width: toRect.width + 'px',
                     height: toRect.height + 'px'
-                });
-                var fromClass = moving.attr('class');
-                var toClass = toHero.attr('class');
+                }).addClass('hero-animating-active');
+                
                 moving.attr('class', toHero.attr('class') + ' hero-animating');
                 
                 // Handle the event at the end of transition

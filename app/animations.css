@@ -1,37 +1,21 @@
 ﻿
-.slide-transition.ng-enter, .slide-transition.ng-leave {
+/* Basic page transition */
+.page-transition.ng-enter, .page-transition.ng-leave {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: all ease-in-out 1000ms;
-    -moz-transition: all ease-in-out 1000ms;
-    -o-transition: all ease-in-out 1000ms;
-    transition: all ease-in-out 1000ms;
+    -webkit-transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 500ms;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 }
-.slide-transition.ng-enter {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+.page-transition.ng-enter, .page-transition.ng-leave.ng-leave-active {
+    opacity: 0;
 }
-    .slide-transition.ng-enter.ng-enter-active {
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-.slide-transition.ng-leave.ng-leave-active {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+.page-transition.ng-enter.ng-enter-active {
+    opacity: 1;
 }
 
 .hero-transition.hero-leave {
@@ -42,13 +26,49 @@
     visibility: visible;
 }
 
+/* Screen transitions common parts */
+.page-transition.ng-enter .screen2 p, .page-transition.ng-enter .screen3 p, .page-transition.ng-enter .screen4 .list {
+    -webkit-transition: transform ease-in-out 300ms;
+    transition: transform ease-in-out 300ms;
+
+    opacity: 0;
+}
+.page-transition.ng-enter.ng-enter-active .screen2 p, .page-transition.ng-enter.ng-enter-active .screen3 p, .page-transition.ng-enter.ng-enter-active .screen4 .list {
+    -webkit-transition-delay: 200ms;
+    transition-delay: 200ms;
+
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+}
+
+/* Screen1 transitions */
+
+/* Screen2 transitions */
+.page-transition.ng-enter .screen2 p {
+    -webkit-transform: scale(0);
+    transform: scale(0.6);
+}
+
+/* Screen3 transitions */
+.page-transition.ng-enter .screen3 p {
+    -webkit-transform: translate3d(0, -200px, 0);
+    transform: translate3d(0, -200px, 0);
+}
+
+/* Screen4 transitions */
+.page-transition.ng-enter .screen4 .list {
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+}
+
+/* Hero transition css properties */
 .hero-animating {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: all ease-in-out 1000ms;
-    -moz-transition: all ease-in-out 1000ms;
-    -o-transition: all ease-in-out 1000ms;
-    transition: all ease-in-out 1000ms;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
     position: absolute;
     z-index: 10000;
 }

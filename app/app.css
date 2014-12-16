@@ -7,13 +7,14 @@ body {
 }
 
 button {
-    border: 0 none #0010ae;
+    border: 0 solid #0010ae;
     background-color: #1f2afe;
     color: #fff;
     font-size: 120%;
     padding: 8px 16px;
     outline-width: 0;
     -webkit-appearance: none;
+    box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
 }
     button:hover {
         background-color: #3d46fb;
@@ -24,6 +25,7 @@ button {
         -o-transform: scale(0.9, 0.9);
         -webkit-transform: scale(0.9, 0.9);
         transform: scale(0.9, 0.9);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 
 .screen {
@@ -84,6 +86,7 @@ button {
     margin: 16px;
     height: auto;
     width: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .screen2-button {
@@ -133,7 +136,7 @@ button {
     top: 16px;
     left: auto;
     right: 16px;
-    width: 50px;
+    width: 80px;
     display: block;
 }
 .screen4 .list {
