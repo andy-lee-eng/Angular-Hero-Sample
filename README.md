@@ -2,7 +2,7 @@
 
 The accompanying blog post is here: {blog post}
 
-## Using the hero animation
+## Using the hero animation in your project
 
 Download [hero-transitions.js](app/animations/hero-transition.js) and add it to your project.
 
@@ -36,4 +36,11 @@ Declare the page transitions to use on the `ng-view` element, including `hero-tr
 Identify hero elements with the `hero` class and `hero-id` attribute:
 ```
 <div class="name hero" hero-id="name">{{contact.name}}</div>
+```
+
+###Building and running the project
+
+The project contains a simple node web server, so all you need to do is run:
+```
+npm start
 ```
