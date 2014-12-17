@@ -18,14 +18,6 @@
     opacity: 1;
 }
 
-.hero-transition.hero-leave {
-    visibility: hidden;
-}
-
-.hero-transition.ng-leave {
-    visibility: visible;
-}
-
 /* Screen transitions common parts */
 .page-transition.ng-enter .screen2 p, .page-transition.ng-enter .screen3 p, .page-transition.ng-enter .screen4 .list {
     -webkit-transition: transform ease-in-out 300ms;
@@ -47,7 +39,7 @@
 
 /* Screen2 transitions */
 .page-transition.ng-enter .screen2 p {
-    -webkit-transform: scale(0);
+    -webkit-transform: scale(0.6);
     transform: scale(0.6);
 }
 

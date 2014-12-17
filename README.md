@@ -19,4 +19,4 @@ The project contains a simple node web server, so all you need to do is run:
 npm start
 ```
 
-Then open yout browser and navigate to [http:\\localhost:8000\app](http:\\localhost:8000\app).
+Then open your browser and navigate to [http:\\localhost:8000\app](http:\\localhost:8000\app).
