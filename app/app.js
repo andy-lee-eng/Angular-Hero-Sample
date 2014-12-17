@@ -4,12 +4,12 @@
 angular.module('angularHero', [
   'ngRoute',
   'ngAnimate',
+  'alAngularHero',
   'angularHero.view1',
   'angularHero.view2',
   'angularHero.view3',
   'angularHero.view4',
-  'angularHero.contactsService',
-  'angularHero.hero-transition'
+  'angularHero.contactsService'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});

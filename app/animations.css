@@ -62,13 +62,3 @@
     -webkit-transform: translate3d(0, 100px, 0);
     transform: translate3d(0, 100px, 0);
 }
-
-/* Hero transition css properties */
-.hero-animating {
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all ease-in-out 500ms;
-    transition: all ease-in-out 500ms;
-    position: absolute;
-    z-index: 10000;
-}
