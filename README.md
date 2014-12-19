@@ -1,6 +1,6 @@
 # Hero animations with Angular
 
-The accompanying blog post is here: {blog post}
+The accompanying blog post is here: [Hero Transitions in AngularJS](http://www.scottlogic.com/blog/2014/12/19/angular-hero-transitions.html)
 
 <img src="sample/angular-hero-sample.gif" />
 
